@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+<section>
+    <form [formGroup]="formEstudiante" (ngSubmit)="procesarGuardado()">
+       
+        <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+        @if( formEstudiante.get('name')!.invalid && formEstudiante.get('name')!.touched){
+            <p>Campo Requerido</p>
+        }
+        @else{
+            @if(formEstudiante.get('name')!.dirty && formEstudiante.get('name')!.invalid ){
+                <p>Ingrese solo letras</p>
+            }
+        }
+
+        <mat-form-field>
+            <mat-label>Apellido</mat-label>
+            <input matInput formControlName="lastName">
+        </mat-form-field>
+        @if( formEstudiante.get('lastName')!.invalid && formEstudiante.get('lastName')!.touched){
+            <p>Campo Requerido</p>
+        }
+        @else{
+            @if(formEstudiante.get('lastName')!.dirty && formEstudiante.get('lastName')!.invalid){
+                <p>Ingrese solo letras</p>
+            }
+        }
+
+        <mat-form-field>
+            <mat-label>Edad</mat-label>
+            <input matInput formControlName="age" type="number">
+        </mat-form-field>
+        @if( formEstudiante.get('age')!.invalid && formEstudiante.get('age')!.touched){
+            <p>Campo Requerido</p>
+        }
+
+        <mat-form-field>
+            <mat-label>Carrera</mat-label>
+            <input matInput formControlName="career">
+        </mat-form-field>
+        @if( formEstudiante.get('career')!.invalid && formEstudiante.get('career')!.touched){
+            <p>Campo Requerido</p>
+        }
+        @else{
+            @if(formEstudiante.get('career')!.dirty && formEstudiante.get('career')!.invalid){
+                <p>Ingrese solo letras</p>
+            }
+        }
+
+        <button mat-raised-button type="submit" color="primary" [disabled]="!formEstudiante.valid">Guardar</button>
+
+    </form>
+</section>

@@ -1,0 +1,81 @@
+{
+  "estudiantes": [
+    {
+      "id": "1",
+      "nombre": "Mariel",
+      "apellido": "Aguirre",
+      "edad": "20",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "2",
+      "nombre": "Nicole",
+      "apellido": "Duran",
+      "edad": "23",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "3",
+      "nombre": "Paola",
+      "apellido": "Fernandez",
+      "edad": "22",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "4",
+      "nombre": "Oscar",
+      "apellido": "Perez",
+      "edad": "19",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "5",
+      "nombre": "Carlos",
+      "apellido": "Daza",
+      "edad": "21",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "6",
+      "nombre": "Santiago",
+      "apellido": "Poma",
+      "edad": "23",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "7",
+      "nombre": "Sofia",
+      "apellido": "Escobar",
+      "edad": "22",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "8",
+      "nombre": "Diana",
+      "apellido": "Guzman",
+      "edad": "20",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "9",
+      "nombre": "Eli",
+      "apellido": "Mendoza",
+      "edad": "22",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "10",
+      "nombre": "Rodrigo",
+      "apellido": "Vargas",
+      "edad": "23",
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "5f91",
+      "name": "Maria",
+      "lastName": "Gonzales",
+      "age": 19,
+      "career": "Sistemas"
+    }
+  ]
+}

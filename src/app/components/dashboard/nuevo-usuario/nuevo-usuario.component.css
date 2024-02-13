@@ -1,0 +1,15 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+p{
+    margin:0;
+    margin-bottom: 13px;
+    margin-top: -15px;
+     color:red;
+     font-size: 13px;
+}
