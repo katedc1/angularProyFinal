@@ -24,23 +24,24 @@ export class NuevoUsuarioComponent {
 
   ngOnInit(): void {
     this.formEstudiante = new FormGroup({
-    name: new FormControl('', [Validators.required, Validators.pattern('[a-zA-Z]+')]),
-    lastName: new FormControl('',[Validators.required, Validators.pattern('[a-zA-Z]+')]),
-    age: new FormControl(0, Validators.required),
-    career: new FormControl('',[Validators.required, Validators.pattern('[a-zA-Z]+')])
+    nombre: new FormControl('', [Validators.required, Validators.pattern('[a-zA-Z]+')]),
+    apellido: new FormControl('',[Validators.required, Validators.pattern('[a-zA-Z]+')]),
+    edad: new FormControl(0, Validators.required),
+    carrera: new FormControl('',[Validators.required, Validators.pattern('[a-zA-Z]+')])
     })
   }
   
 
   procesarGuardado(){
     console.log('entro guardar')
-    if(this.formEstudiante.value.age! < 18){
+    console.log('aq',this.formEstudiante.value.edad)
+    if(this.formEstudiante.value.edad! < 18){
       this.validado = false;
       //alert("Edad Incorrecta")
       Swal.fire({
         title: "¡Error!",
         text: "¡Edad Incorrecta!",
-        icon: "success"
+        icon: "error"
       });
     }else{
       this.validado = true;
@@ -52,7 +53,7 @@ export class NuevoUsuarioComponent {
     this._apiService.postEstudiante(this.formEstudiante.value).subscribe(datos => {
       Swal.fire({
         title: "¡Exito!",
-        text: "Se registro correctamente!",
+        text: "Se registro exitosamente!",
         icon: "success"
       });
       this.router.navigateByUrl('/dashboard');

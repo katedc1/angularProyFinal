@@ -72,10 +72,24 @@
     },
     {
       "id": "5f91",
-      "name": "Maria",
-      "lastName": "Gonzales",
-      "age": 19,
-      "career": "Sistemas"
+      "nombre": "Maria",
+      "apellido": "Gonzales",
+      "edad": 19,
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "2414",
+      "nombre": "Marcelo",
+      "apellido": "Vega",
+      "edad": 25,
+      "carrera": "Sistemas"
+    },
+    {
+      "id": "6c88",
+      "nombre": "Antonio",
+      "apellido": "Morales",
+      "edad": 20,
+      "carrera": "Sistemas"
     }
   ]
 }

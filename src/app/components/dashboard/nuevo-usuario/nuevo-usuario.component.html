@@ -4,47 +4,47 @@
        
         <mat-form-field>
             <mat-label>Nombre</mat-label>
-            <input matInput formControlName="name">
+            <input matInput formControlName="nombre">
         </mat-form-field>
-        @if( formEstudiante.get('name')!.invalid && formEstudiante.get('name')!.touched){
+        @if( formEstudiante.get('nombre')!.invalid && formEstudiante.get('nombre')!.touched){
             <p>Campo Requerido</p>
         }
         @else{
-            @if(formEstudiante.get('name')!.dirty && formEstudiante.get('name')!.invalid ){
+            @if(formEstudiante.get('nombre')!.dirty && formEstudiante.get('nombre')!.invalid ){
                 <p>Ingrese solo letras</p>
             }
         }
 
         <mat-form-field>
             <mat-label>Apellido</mat-label>
-            <input matInput formControlName="lastName">
+            <input matInput formControlName="apellido">
         </mat-form-field>
-        @if( formEstudiante.get('lastName')!.invalid && formEstudiante.get('lastName')!.touched){
+        @if( formEstudiante.get('apellido')!.invalid && formEstudiante.get('apellido')!.touched){
             <p>Campo Requerido</p>
         }
         @else{
-            @if(formEstudiante.get('lastName')!.dirty && formEstudiante.get('lastName')!.invalid){
+            @if(formEstudiante.get('apellido')!.dirty && formEstudiante.get('apellido')!.invalid){
                 <p>Ingrese solo letras</p>
             }
         }
 
         <mat-form-field>
             <mat-label>Edad</mat-label>
-            <input matInput formControlName="age" type="number">
+            <input matInput formControlName="edad" type="number">
         </mat-form-field>
-        @if( formEstudiante.get('age')!.invalid && formEstudiante.get('age')!.touched){
+        @if( formEstudiante.get('edad')!.invalid && formEstudiante.get('edad')!.touched){
             <p>Campo Requerido</p>
         }
 
         <mat-form-field>
             <mat-label>Carrera</mat-label>
-            <input matInput formControlName="career">
+            <input matInput formControlName="carrera">
         </mat-form-field>
-        @if( formEstudiante.get('career')!.invalid && formEstudiante.get('career')!.touched){
+        @if( formEstudiante.get('carrera')!.invalid && formEstudiante.get('carrera')!.touched){
             <p>Campo Requerido</p>
         }
         @else{
-            @if(formEstudiante.get('career')!.dirty && formEstudiante.get('career')!.invalid){
+            @if(formEstudiante.get('carrera')!.dirty && formEstudiante.get('carrera')!.invalid){
                 <p>Ingrese solo letras</p>
             }
         }
